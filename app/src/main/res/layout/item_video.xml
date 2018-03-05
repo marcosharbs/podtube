@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_video"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="0dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/text_video_name"
+        android:textColor="#212121"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/image_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/text_video_date"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image_video"
+        android:layout_below="@+id/text_video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#BDBDBD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/image_movie"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/image_download"
+        android:layout_width="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="30dp"
+        android:tint="#212121"
+        android:src="@drawable/ic_movie"/>
+
+    <ImageView
+        android:id="@+id/image_download"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#212121"
+        android:src="@drawable/ic_download"/>
+
+</RelativeLayout>

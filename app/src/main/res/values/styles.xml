@@ -1,0 +1,57 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:logo">@drawable/actionbar_logo</item>
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/colorPrimary</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="TabLayoutTheme" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#ffffff</item>
+        <item name="tabTextAppearance">@style/TextAppearanceTab</item>
+    </style>
+
+    <style name="TextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="AppNoActionBarTheme">
+        <item name="android:windowBackground">@drawable/dw_splash_background</item>
+    </style>
+
+    <style name="AppButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="AppPrimaryButton" parent="AppButton">
+        <item name="android:background">@drawable/primary_button</item>
+    </style>
+
+    <style name="AppGoogleButton" parent="AppButton">
+        <item name="android:background">@drawable/google_button</item>
+    </style>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:clipToPadding="false"
+        app:elevation="10dp"
+        android:elevation="10dp"
+        android:outlineProvider="bounds"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_channel_banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            fresco:actualImageScaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:alpha="0.6"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_channel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/image_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_channel_title"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/label_channel_description"
+                android:layout_below="@+id/label_channel_title"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/label_channel_subscribers"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/videos_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

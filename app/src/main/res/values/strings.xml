@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PodTube</string>
+    <string name="download_error">Erro ao baixar o vídeo!</string>
+    <string name="search_channel_hint">Buscar canais...</string>
+    <string name="label_subscriptions">inscritos</string>
+    <string name="label_videos">vídeos</string>
+    <string name="label_load_more">Carregar mais registros</string>
+    <string name="label_loading_more">Carregando</string>
+    <string name="label_delete">Excluir</string>
+    <string name="label_yes">Sim</string>
+    <string name="label_no">Não</string>
+    <string name="label_delete_msg">Deseja realmente excluir este download?</string>
+    <string name="label_download_msg">Download do vídeo iniciado!</string>
+    <string name="label_error_title">Erro no download!</string>
+    <string name="label_download_title">Download completo!</string>
+    <string name="label_error_msg">Aconteceu um erro desconhecido ao baixar o áudio do vídeo %1$s</string>
+    <string name="label_download_notification_msg">Download do vídeo %1$s terminou!</string>
+
+    <string name="date_medium_format">dd/MM/yyyy</string>
+    <string name="int_long_format">#,###,###</string>
+</resources>

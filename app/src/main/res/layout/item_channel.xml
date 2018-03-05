@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_channel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="8dp"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_channel"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_channel_name"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/text_channel_description"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:layout_below="@+id/text_channel_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#BDBDBD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
